@@ -1,0 +1,22 @@
+.status{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+h2{
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: rgb(10, 10, 10);
+    text-align: center;
+}
