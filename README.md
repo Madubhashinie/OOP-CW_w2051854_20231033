@@ -40,7 +40,7 @@ The project includes a basic ticket pool management command-line interface (CLI)
 
         3.1. Clone the repository:
 
-        git clone https://github.com/Madubhashinie/RealTimeTicketingSystem.git
+        git clone https://github.com/Madubhashinie/OOP-CW_w2051854_20231033.git
         cd RealTimeTicketingSystem/backend
 
 
