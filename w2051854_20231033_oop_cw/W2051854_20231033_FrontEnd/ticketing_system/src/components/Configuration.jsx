@@ -12,6 +12,9 @@ const ConfigurationForm = ({ config, CONFIG_API, isRunning }) => {
   const [formError, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
+  /**
+   * Automatically fills form fields when the component loads or when the configuration data changes
+   */
   useEffect(() => {
     if (config) {
       setTotalTickets(config.totalTickets || "");
@@ -21,6 +24,11 @@ const ConfigurationForm = ({ config, CONFIG_API, isRunning }) => {
     }
   }, [config]);
 
+  /**
+   * Validates form inputs and submits configuration data to the backend
+   * @param {*} e 
+   * @returns  Displays success or error message
+   */
   const validateInputs = async (e) => {
     e.preventDefault();
 
@@ -69,6 +77,9 @@ const ConfigurationForm = ({ config, CONFIG_API, isRunning }) => {
     }
   };
 
+  /**
+   * Prompts the user to re-enter total tickets if set to zero
+   */
   const resetTotalTickets = () => {
     if (totalTickets === 0) {
       const newTotalTickets = prompt("Enter total tickets (1 to 100):", "1");
@@ -80,6 +91,9 @@ const ConfigurationForm = ({ config, CONFIG_API, isRunning }) => {
     }
   };
 
+  /**
+   * Resets total tickets if set to zero and the system is not running
+   */
   useEffect(() => {
     if (totalTickets === 0 && !isRunning) {
       resetTotalTickets();
@@ -141,7 +155,9 @@ const ConfigurationForm = ({ config, CONFIG_API, isRunning }) => {
   );
 };
 
-// PropTypes Validation
+/**
+ * PropTypes validation for component properties
+ */
 ConfigurationForm.propTypes = {
   config: PropTypes.object,
   CONFIG_API: PropTypes.string.isRequired,
