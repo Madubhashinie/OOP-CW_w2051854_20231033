@@ -42,7 +42,7 @@ function App() {
   const fetchTransactions = useCallback(async () => {
     try {
       const response = await axios.get(TRANSACTION_API);
-      console.log("Fetched Transactions:", response.data); // Debug Output
+      console.log("Fetched Transactions:", response.data); 
   
       // Ensure response is an array before setting state
       if (Array.isArray(response.data)) {
@@ -150,4 +150,3 @@ function App() {
 
 export default App;
 
-//
