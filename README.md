@@ -1,2 +1,0 @@
-# OOP-CW_w2051854_20231033
-OOP coursework
