@@ -7,6 +7,9 @@ const TicketStatus = () => {
   const [maxCapacity, setMaxCapacity] = useState(0);
   const [error, setError] = useState("");
 
+  /**
+   * Fetches the current ticket pool status from the backend API
+   */
   useEffect(() => {
     const fetchStatus = async () => {
       try {
@@ -22,7 +25,7 @@ const TicketStatus = () => {
 
     fetchStatus();
 
-    // Optionally, refresh status periodically
+    //Refresh the ticket status every 5 seconds
     const interval = setInterval(fetchStatus, 5000);
     return () => clearInterval(interval);
   }, []);
