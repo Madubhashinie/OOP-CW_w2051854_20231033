@@ -34,7 +34,9 @@ const LogDisplay = ({ logs }) => {
   );
 };
 
-// PropTypes Validation
+/**
+ * PropTypes validation for component properties
+ */
 LogDisplay.propTypes = {
   logs: PropTypes.arrayOf(
     PropTypes.shape({
