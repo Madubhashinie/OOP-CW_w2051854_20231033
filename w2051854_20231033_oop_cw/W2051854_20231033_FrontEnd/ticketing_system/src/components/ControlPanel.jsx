@@ -9,6 +9,9 @@ const ControlPanel = ({ onSystemStart, onSystemStop, onSystemReset }) => {
 
   const [isRunning, setIsRunning] = useState(false);
 
+  /**
+   * Starts the system by sending a request to the backend API
+   */
   const start = async () => {
     try {
       const response = await axios.post(`${CONTROL_API}/start`);
@@ -21,6 +24,9 @@ const ControlPanel = ({ onSystemStart, onSystemStop, onSystemReset }) => {
     }
   };
 
+  /**
+   * Stops the system by sending a request to the backend API
+   */
   const stop = async () => {
     try {
       const response = await axios.post(`${CONTROL_API}/stop`);
@@ -33,6 +39,9 @@ const ControlPanel = ({ onSystemStart, onSystemStop, onSystemReset }) => {
     }
   };
 
+  /**
+   * Resets the system by sending a request to the backend API
+   */
   const reset = async () => {
     try {
       const response = await axios.post(`${CONTROL_API}/reset`);
@@ -61,6 +70,9 @@ const ControlPanel = ({ onSystemStart, onSystemStop, onSystemReset }) => {
   );
 };
 
+/**
+ * PropTypes validation for component properties
+ */
 ControlPanel.propTypes = {
   onSystemStart: PropTypes.func,
   onSystemStop: PropTypes.func,
