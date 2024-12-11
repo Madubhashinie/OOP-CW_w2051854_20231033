@@ -1,0 +1,20 @@
+[
+    {
+        "User: ": "Vendor V1",
+        "action: ": " added a ticket",
+        "Date & Time: ": "2024.12.11 , 11:15:56",
+        "Ticket Details: ": "Ticket Number = 1, Event Name= Cinema Event, Ticket Price= 250.0"
+    },
+    {
+        "User: ": "Customer C1",
+        "action: ": " purchased a ticket",
+        "Date & Time: ": "2024.12.11 , 11:15:56",
+        "Ticket Details: ": "Ticket Number = 1, Event Name= Cinema Event, Ticket Price= 250.0"
+    },
+    {
+        "User: ": "Vendor V2",
+        "action: ": " added a ticket",
+        "Date & Time: ": "2024.12.11 , 11:15:56",
+        "Ticket Details: ": "Ticket Number = 2, Event Name= Cinema Event, Ticket Price= 250.0"
+    }
+]
